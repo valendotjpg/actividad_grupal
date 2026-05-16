@@ -12,21 +12,6 @@ def division(x, y):
         return "Error: División por cero"
     return x / y
 
-
-
-
-
-
-
-def potencia(x,y):
-    if y==0:
-        return 1
-    elif y==1:
-        return x
-    return x**y
-
-
-
 def menu():
     salir = False
     while not salir:
