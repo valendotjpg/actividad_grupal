@@ -35,16 +35,17 @@ def menu():
         print("2 - Resta")
         print("3 - Multiplicacion")
         print("4 - Division")
-        print("5 - Salir")
+        print("5 - Potencia")
+        print("6 - Salir")
         
         operacion = input("\nIngresa la operacion que quieras realizar: ")
         
-        if operacion == "5":
+        if operacion == "6":
             print("¡Hasta luego!")
             salir = True
             break
         
-        if operacion in ["1", "2", "3", "4"]:
+        if operacion in ["1", "2", "3", "4", "5"]:
             try:
                 x = float(input("Ingresa el primer numero: "))
                 y = float(input("Ingresa el segundo numero: "))
@@ -61,6 +62,9 @@ def menu():
                 elif operacion == "4":
                     resultado = division(x, y)
                     print(f"Resultado: {x} / {y} = {resultado}")
+                elif operacion == "5":
+                    resultado = potencia(x, y)
+                    print(f"Resultado: {x} ^ {y} = {resultado}")
             except ValueError:
                 print("Error: Ingresa numeros validos")
         else:
