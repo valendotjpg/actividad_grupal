@@ -12,8 +12,8 @@ def division(x, y):
         return "Error: División por cero"
     return x / y
 
-
-
+def raiz(x):
+    return x ** 0.5
 
 
 
